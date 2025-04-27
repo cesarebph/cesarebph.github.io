@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Cal Sans', sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	height: 100%;
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	padding: 3% 0% 0% 0%;
+	background: #000;
+	color: white;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+
+header h2 {
+	margin: 10px 0 0;
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #aaa;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.gallery img {
+	width: 30%;
+	border: 10px solid white;
+	padding: 5px;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+	transform: scale(1.03);
+}
+
+.gallery-text {
+	background: white;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	line-height: 1.5;
+}
+
+.galleries .gallery {
+  display: none;
+}
+
+.galleries .gallery:first-child {
+  display: flex;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main-container {
+	margin: 0 5%;
+}
+
+footer {
+	margin-top: auto;
+}
+
+@media (max-width: 768px) {
+	.gallery img {
+		width: 90%;
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.gallery-selector {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.selector-btn {
+	background-color: transparent;
+	border: 2px solid #333;
+	color: #333;
+	padding: 10px 20px;
+	margin: 0 10px;
+	font-size: 1em;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.selector-btn:hover {
+	background-color: #333;
+	color: white;
+}
+
+.selector-btn.active {
+	background-color: #333;
+	color: white;
+}
+
+.fa {
+	color: #aaa;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
