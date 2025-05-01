@@ -48,7 +48,7 @@ header h2 {
 
 .gallery .line img {
 	width: 30%;
-	border: 10px solid white;
+	/*border: 3px solid white;*/
 	padding: 5px;
 	background-color: white;
 	border-radius: 6px;
@@ -84,7 +84,7 @@ header h2 {
 }
 
 .main-container {
-	margin: 0% 3%;
+	margin: 0% 0%;
 }
 
 footer {
