@@ -149,52 +149,52 @@ footer {
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  overflow: auto; /* Allow scroll if content overflows */
-  padding: 20px;   /* Add padding to prevent content from touching screen edges */
-  box-sizing: border-box;
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .modal-content {
-  max-height: 90vh;   /* Limit height to 90% of viewport */
-  max-width: 90vw;    /* Limit width too */
-  height: auto;
-  width: auto;
-  object-fit: contain; /* Ensure image scales proportionally */
-  display: block;
-  margin: 0 auto;
+	max-height: 90vh;
+	max-width: 90vw;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
 }
 
 #caption {
-  color: white;
-  text-align: center;
-  padding-top: 10px;
-  word-wrap: break-word;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	word-wrap: break-word;
 }
 
 .close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 2;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 2;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }
